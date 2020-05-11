@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: mysql-svc
+  namespace: default
 spec:
   selector:
     app: mysql
@@ -17,6 +18,7 @@ metadata:
   name: mysql
   labels:
     app: mysql
+    namespace: default
 spec:
   replicas: 1
   selector:
